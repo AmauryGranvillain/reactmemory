@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './Card.css';
 
-import './Card.css'
+const HIDDEN_SYMBOL = '❓';
 
-const HIDDEN_SYMBOL = '❓'
+const Card = ({ card, feedback}) => (
+    <div className={`card ${feedback}`}>
+        <span className="symbol">
+            {feedback === 'hidden' ? HIDDEN_SYMBOL : card}
+        </span>
+    </div>
+)
 
-const Card = () => <div className="card" />
-
-export default Card
+export default Card;
