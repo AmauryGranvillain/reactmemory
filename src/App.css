@@ -1,7 +1,12 @@
 .memory {
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  width: 380px;
   margin: auto;
   user-select: none;
+}
+.memory .container_card{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
